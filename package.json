@@ -1,20 +1,24 @@
 {
-  "name": "node-mongo",
+  "name": "test-blog-mongo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlterOnce/node-mongo.git"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlterOnce/node-mongo/issues"
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   },
-  "homepage": "https://github.com/AlterOnce/node-mongo#readme"
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.0.1",
+    "mongoose": "^5.13.5",
+    "pg": "^8.7.1"
+  }
 }
